@@ -25,4 +25,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      - run: aws s3 sync dist/ s3://chirp-site-CHANGE-ME --delete
+      - run: aws s3 sync dist/ s3://arn:aws:s3:::chirp-demo-915079919729-eu-west-3-an --delete
